@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc161</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc161</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/advertisers</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Editatable Reside...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementIndex</td>
+	<td>//tr/td/span[contains(@title, &quot;Editatable Residential&quot;)]/../../</td>
+	<td>tr</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${tr} + 1</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[${row}]/td[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=html body.advertisers div.modal-scrollable div#advertiser-edit-modal-6889.modal form#edit_advertiser_6889.form-horizontal div.modal-body div.control-group div.controls input#advertiser_name</td>
+	<td>XXEditatable ResidentialXX</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div[3]/div/form/div[3]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>XXEditatable Resi...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementIndex</td>
+	<td>//tr/td/span[contains(@title, &quot;XXEditatable ResidentialXX&quot;)]/../../</td>
+	<td>tr2</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${tr2} + 1</td>
+	<td>row2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[${row2}]/td[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=html body.advertisers div.modal-scrollable div#advertiser-edit-modal-6889.modal form#edit_advertiser_6889.form-horizontal div.modal-body div.control-group div.controls input#advertiser_name</td>
+	<td>Editatable Residential</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div[3]/div/form/div[3]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Editatable Reside...</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

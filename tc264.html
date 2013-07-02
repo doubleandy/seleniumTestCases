@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc264</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc264</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeAttribute</td>
+	<td>//table/tbody/tr[2]/td[2]/a/span@title</td>
+	<td>action</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/listings/1234-happy-feet-st-leavenworth-wa-98826/tasks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div/div[2]/div[3]/div[2]/div/table/tbody/tr[2]/td/form/label/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//html/body/div/div[2]/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[2]/a/span@title</td>
+	<td>${action}</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

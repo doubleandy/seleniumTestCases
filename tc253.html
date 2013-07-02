@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc253</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc253</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>link=add task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=add_task_task_name</td>
+	<td>Anyone's Private Friday</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=add_task_task_recurring_frequency</td>
+	<td>label=Weekly</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=add_task_task_recurring_day</td>
+	<td>label=Friday</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_task_task_public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#new_add_task &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Anyone's Private Friday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementIndex</td>
+	<td>//tr/td/a/span[contains(text(), &quot;Anyone's Private Friday&quot;)]/../../../</td>
+	<td>tr</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${tr} + 1</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[${row}]/td[4]</td>
+	<td>ANYONE</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[${row}]/td[6]</td>
+	<td>NO</td>
+</tr>
+</tbody></table>
+</body>
+</html>

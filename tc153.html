@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc153</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc153</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/advertisers</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Advertiser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#new_advertiser &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #advertiser_name</td>
+	<td>Manufactured Home Only</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=prop_type_all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='property_type_'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#new_advertiser &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=advertiser_property_type</td>
+	<td>label=Manufactured Home</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Manufactured Home...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementIndex</td>
+	<td>//tr/td/span[contains(@title, &quot;Manufactured Home Only&quot;)]/../../</td>
+	<td>tr</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${tr} + 1</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//tr[${row}]/td/span@title</td>
+	<td>Manufactured Home Only</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=advertiser_property_type</td>
+	<td>label=Residential</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Manufactured Home...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=advertiser_property_type</td>
+	<td>label=Commercial</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Manufactured Home...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=advertiser_property_type</td>
+	<td>label=Vacant Land</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Manufactured Home...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=advertiser_property_type</td>
+	<td>label=Multiple Family</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Manufactured Home...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=advertiser_property_type</td>
+	<td>label=Business Opportunity</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Manufactured Home...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=advertiser_property_type</td>
+	<td>label=Rental</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Manufactured Home...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=advertiser_property_type</td>
+	<td>label=Condominium</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Manufactured Home...</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

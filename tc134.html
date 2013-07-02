@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc134</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc134</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/tasks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#new_task &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #task_name</td>
+	<td>TEST TASK ALL</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=#new_task &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #task_assigned_user_id</td>
+	<td>label=James Bond</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[55]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#new_task &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #task_days_until_due</td>
+	<td>abc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=prop_type_all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='property_type_'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#new_task &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Days Until Due</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Is not a number</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

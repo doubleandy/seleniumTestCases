@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc343</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc343</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>Ferndale</td>
+	<td>city</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Seleniumville</td>
+	<td>newcity</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/listings/1234-siddle-st-ferndale-wa-98248/edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=listing_address_attributes_city</td>
+	<td>${newcity}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Saved successfully!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//*[@id=&quot;listing_address_attributes_city&quot;]@value</td>
+	<td>${newcity}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//ul[contains(@class, &quot;breadcrumb&quot;)]/li</td>
+	<td>1234 Siddle st Seleniumville, WA - 98248</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/listings/1234-siddle-st-seleniumville-wa-98248</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//html/body/div/div[2]/div[3]/div[2]/h3[2]</td>
+	<td>${newcity}, Washington</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/listings/1234-siddle-st-ferndale-wa-98248/edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=listing_address_attributes_city</td>
+	<td>${city}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Saved successfully!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//*[@id=&quot;listing_address_attributes_city&quot;]@value</td>
+	<td>${city}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//ul[contains(@class, &quot;breadcrumb&quot;)]/li</td>
+	<td>1234 Siddle st Ferndale, WA - 98248</td>
+</tr>
+</tbody></table>
+</body>
+</html>

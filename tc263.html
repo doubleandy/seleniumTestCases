@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc263</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc263</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>link=add task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=add_task_task_name</td>
+	<td>Recurring</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=add_task_task_assigned_user_id</td>
+	<td>label=James Bond</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=add_task_task_recurring_frequency</td>
+	<td>label=Number of Days</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_task_task_public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#new_add_task &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Task Days Until Due</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Is not a number</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

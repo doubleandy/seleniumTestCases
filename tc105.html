@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc105</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc105</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/tasks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ACTION PLANS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-body div.control-group div.controls select#task_assigned_user_id</td>
+	<td>label=Jane Bond</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-body div.control-group div.controls input#task_days_until_due</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-body div.control-group div.controls label.checkbox input#task_public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-body div.control-group div.controls label.checkbox input#prop_type_all.prop_type_all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='property_type_'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-footer input.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Action can't be blank.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

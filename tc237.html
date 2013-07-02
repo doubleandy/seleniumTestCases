@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc237</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc237</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://beta.brivity.com/listings/1234-happy-feet-st-leavenworth-wa-98826/advertising</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=add advertiser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=add_advertiser_advertiser_name</td>
+	<td>Happy Complete</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=add_advertiser_listing_advertiser_url</td>
+	<td>http://happyadvertiserurl.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#new_add_advertiser &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Happy Complete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//td/i@class</td>
+	<td>icon-ok</td>
+</tr>
+<tr>
+	<td>storeElementIndex</td>
+	<td>//tr/td/i[contains(@class, &quot;icon-ok&quot;)]/../../</td>
+	<td>tr</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${tr} + 1</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//tr[${row}]/td[1]/i@class</td>
+	<td>icon-ok</td>
+</tr>
+</tbody></table>
+</body>
+</html>

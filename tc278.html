@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc278</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc278</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>link=add feeback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#new_feedback &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #feedback_name</td>
+	<td>Joe Agent</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#new_feedback &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #feedback_body</td>
+	<td>This is public negative feedback from selenium</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#new_feedback &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>This is public negative feedback from selenium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//html/body/div/div[2]/div[3]/div[2]/div/div[2]/div/div/div/div/span</td>
+	<td>(PUBLIC)</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>This is public negative feedback from selenium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//html/body/div/div[2]/div[3]/div[2]/div/div[2]/div/div/div/blockquote/p</td>
+	<td>This is public negative feedback from selenium</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//html/body/div/div[2]/div[3]/div[2]//div/div[2]/div/div/div/div[2]/li@class</td>
+	<td>icon-thumbs-down</td>
+</tr>
+</tbody></table>
+</body>
+</html>
