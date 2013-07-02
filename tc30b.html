@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc30b</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc30b</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=edit-account-modal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>exact:Team name <br /> <br /> Phone ? <br /> <br /> <br /> Fax ? <br /> <br /> <br /> Email Frequency Daily Weekly ? <br /> <br /> <br /> Street Address <br /> <br /> City <br /> <br /> State/Province Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming American Samoa District of Columbia Federated States of Micronesia Guam Marshall Islands Northern Mariana Islands Palau Puerto Rico Virgin Islands Armed Forces Middle East Armed Forces Americas Armed Forces Pacific Ontario Quebec Nova Scotia New Brunswick Manitoba British Columbia Prince Edward Island Saskatchewan Newfoundland and Labrador <br /> <br /> Postal Code</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=account_address_attributes_city</td>
+	<td>test city</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=account_address_attributes_postalCode</td>
+	<td>11111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=account_address_attributes_locality</td>
+	<td>label=Alabama</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=account_address_attributes_streetAddress</td>
+	<td>test address</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#edit_account_73 &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>test address</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>test city</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>11111</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc47</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc47</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>Anyone's 1 Time Residential</td>
+	<td>res</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/tasks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#new_task &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #task_name</td>
+	<td>Anyone's 1 Time Residential</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#new_task &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #task_days_until_due</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=prop_type_all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='property_type_'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#new_task &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ACTION PLANS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementIndex</td>
+	<td>//span[contains(text(), &quot;${res}&quot;)]/../../../</td>
+	<td>actIndex</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${actIndex} + 1</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[${row}]/td/a/span</td>
+	<td>${res}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[${row}]/td[2]</td>
+	<td>After 3 days</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[${row}]/td[3]</td>
+	<td>Anyone</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[${row}]/td[4]</td>
+	<td>Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=task_property_type</td>
+	<td>label=Condominium</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Anyone's 1 Time Residential</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=task_property_type</td>
+	<td>label=Vacant Land</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Anyone's 1 Time Residential</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=task_property_type</td>
+	<td>label=Multiple Family</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Anyone's 1 Time Residential</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=task_property_type</td>
+	<td>label=Business Opportunity</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Anyone's 1 Time Residential</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=task_property_type</td>
+	<td>label=Rental</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Anyone's 1 Time Residential</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=task_property_type</td>
+	<td>label=Manufactured Home</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Anyone's 1 Time Residential</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=task_property_type</td>
+	<td>label=Commercial</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Anyone's 1 Time Residential</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

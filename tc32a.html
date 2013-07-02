@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc32a</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc32a</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>first</td>
+	<td>edit</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>last</td>
+	<td>user</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Original Bond</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementIndex</td>
+	<td>//tr/td/span[contains(text(), &quot;Original Bond&quot;)]/../../</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${row} + 1</td>
+	<td>pos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[${pos}]/td[6]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#edit_user &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #user_first_name</td>
+	<td>${first}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#edit-user-modal-572 &gt; #edit_user &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #user_last_name</td>
+	<td>xLast</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#edit-user-modal-572 &gt; #edit_user &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #user_email</td>
+	<td>editatableemail@gmail.xxx</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#edit-user-modal-572 &gt; #edit_user &gt; div.modal-footer &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>editatableemail@gmail.xxx </td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

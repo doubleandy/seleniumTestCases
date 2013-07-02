@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc48</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc48</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>TASK RES JAMES</td>
+	<td>task</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/tasks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ACTION PLANS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#new_task &gt; div.modal-body &gt; div.control-group &gt; div.controls &gt; #task_name</td>
+	<td>${task}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-body div.control-group div.controls select#task_assigned_user_id</td>
+	<td>label=James Bond</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-body div.control-group div.controls input#task_days_until_due</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-body div.control-group div.controls label.checkbox input#prop_type_all.prop_type_all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='property_type_'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=html body.tasks div.modal-scrollable div#task-new-modal.modal form#new_task.form-horizontal div.modal-footer input.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${task}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementIndex</td>
+	<td>//tr/td/a/span[contains(@title, '${task}')]/../../../</td>
+	<td>tr</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${tr} + 1</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//tr[${row}]/td/a/span@title</td>
+	<td>${task}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[${row}]/td[2]</td>
+	<td>After 5 days</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>//tr[${row}]/td[3]/span@title</td>
+	<td>James Bond</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[${row}]/td[4]</td>
+	<td>Yes</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=task_property_type</td>
+	<td>label=Condominium</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://beta.brivity.com/tasks?property_type=condominium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${task}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=task_property_type</td>
+	<td>label=Vacant Land</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${task}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=task_property_type</td>
+	<td>label=Multiple Family</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://beta.brivity.com/tasks?property_type=multiple%20family</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${task}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=task_property_type</td>
+	<td>label=Business Opportunity</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://beta.brivity.com/tasks?property_type=business%20opportunity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${task}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=task_property_type</td>
+	<td>label=Rental</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://beta.brivity.com/tasks?property_type=rental</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${task}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=task_property_type</td>
+	<td>label=Manufactured Home</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://beta.brivity.com/tasks?property_type=manufactured%20home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${task}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=task_property_type</td>
+	<td>label=Commercial</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://beta.brivity.com/tasks?property_type=commercial</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${task}</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

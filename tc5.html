@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.brivity.com/" />
+<title>tc5</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc5</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/listings/search?utf8=%E2%9C%93&amp;q=</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=search-input</td>
+	<td>&lt;script&gt;alert(&quot;hello&quot;);&lt;/script&gt;</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>SEARCH RESULTS FOR &lt;script&gt;alert(&quot;hello&quot;);&lt;/script&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertLocation</td>
+	<td>http://beta.brivity.com/listings/search?utf8=%E2%9C%93&amp;e=t&amp;q=%3Cscript%3Ealert%28%22hello%22%29%3B%3C%2Fscript%3E</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
